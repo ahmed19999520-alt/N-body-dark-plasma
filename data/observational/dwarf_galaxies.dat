@@ -1,0 +1,4 @@
+# system v_kms sigma_over_m_model sigma_over_m_err upper_limit_cm2_per_g
+ultra_faint_dwarfs 5.00000000e+00 6.20000000e-01 1.10000000e-01 1.00000000e+00
+dwarf_spheroidals 1.00000000e+01 4.70000000e-01 9.00000000e-02 1.00000000e+00
+milky_way_satellites 7.50000000e+01 1.00000000e-01 3.00000000e-02 5.00000000e-01

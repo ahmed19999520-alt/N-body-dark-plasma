@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "n-body-dark-plasma"
+version = "1.0.0"
+description = "Numerical framework for the SU(3) dark sector: octet spectrum, relic abundance, self-interactions, first-order confinement gravitational waves and Bayesian reconstruction"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ahmed Ali" }]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "sympy>=1.12",
+    "matplotlib>=3.8",
+    "pandas>=2.1",
+    "dynesty>=2.1",
+    "corner>=2.2",
+    "h5py>=3.10",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.5", "nbformat>=5.9", "nbconvert>=7.14", "sphinx>=7.2", "sphinx-rtd-theme>=2.0"]
+
+[project.scripts]
+nbodydp-pipeline = "N_bodyDP.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["N_bodyDP*"]
+
+[tool.setuptools.package-data]
+N_bodyDP = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 175
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E731", "E741", "E402"]

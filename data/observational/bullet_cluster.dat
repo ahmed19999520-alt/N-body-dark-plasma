@@ -1,0 +1,4 @@
+# system v_kms sigma_over_m_model sigma_over_m_err upper_limit_cm2_per_g
+galaxy_groups 3.00000000e+02 2.60000000e-02 7.00000000e-03 1.00000000e-01
+galaxy_clusters 1.00000000e+03 5.90000000e-03 1.10000000e-03 4.70000000e-01
+bullet_cluster 1.00000000e+03 4.40000000e-03 9.00000000e-04 4.70000000e-01

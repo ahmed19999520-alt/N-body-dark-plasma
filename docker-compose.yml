@@ -1,0 +1,17 @@
+services:
+  pipeline:
+    build: .
+    image: nbodydp:1.0.0
+    volumes:
+      - ./results:/opt/nbodydp/results
+    command: python scripts/run_full_pipeline.py --output /opt/nbodydp/results
+  tests:
+    build: .
+    image: nbodydp:1.0.0
+    command: pytest
+  notebooks:
+    build: .
+    image: nbodydp:1.0.0
+    ports:
+      - "8888:8888"
+    command: jupyter lab --ip=0.0.0.0 --no-browser --allow-root

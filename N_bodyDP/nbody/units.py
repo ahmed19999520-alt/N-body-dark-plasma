@@ -1,0 +1,10 @@
+G_KPC = 4.30091727e-6
+KPC_CM = 3.0856775814913673e21
+MSUN_G = 1.98841e33
+KM_S_PER_KPC_GYR = 1.0227121650537077
+TIME_UNIT_GYR = 1.0 / KM_S_PER_KPC_GYR
+CM2_PER_G_TO_KPC2_PER_MSUN = MSUN_G / KPC_CM ** 2
+
+
+def sigma_over_m_to_internal(sigma_over_m_cm2_g):
+    return sigma_over_m_cm2_g * CM2_PER_G_TO_KPC2_PER_MSUN

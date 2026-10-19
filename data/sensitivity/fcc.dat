@@ -1,0 +1,4 @@
+# machine sqrt_s_gev luminosity_fb sigma_fb n_events
+FCC_ee 3.65000000e+02 1.50000000e+06 1.10000000e-03 1650
+FCC_hh_total 1.00000000e+05 3.00000000e+04 8.00000000e-01 24000
+FCC_hh_per_year 1.00000000e+05 1.00000000e+02 8.00000000e-01 80
