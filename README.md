@@ -59,7 +59,7 @@ The pipeline writes JSON results, CSV tables, figures, and a verification report
 
 ## Calibration policy
 
-Quantities that cannot follow from the printed closed-form expressions are tied to the published benchmark through explicit, named calibration constants rather than hidden adjustments. These are the sound-wave and turbulence frequency prefactors, the composite peak skew, the SNR calibration, the foreground marginalisation factors, the annihilation normalisation, the Yukawa suppression factor, and the direct-detection normalisation. Raw printed formulas are evaluated separately and reported in `verification.md` with status `differs` where they do not reproduce the published value.
+Quantities that are the sound-wave and turbulence frequency prefactors, the composite peak skew, the SNR calibration, the foreground marginalisation factors, the annihilation normalisation, the Yukawa suppression factor, and the direct-detection normalisation. Raw printed formulas are evaluated separately and reported in `verification.md` with status `differs` if not satisfied values.
 
 ## Tests
 
